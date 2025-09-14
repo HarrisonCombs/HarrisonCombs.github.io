@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header class="header">
+    <h1>My Portfolio</h1>
+  </header>
+
+  <div class="menu" >
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('experience')">Work Experience</button>
+  </div>
+
+  <div class="content">
+    <div id="about" class="section active">
+        <div class="image"><img src="https://moderncat.com/wp-content/uploads/2014/03/bigstock-46771525_Andrey_Kuzmin-1-940x640.jpg" height="150px" width="150px"></div>
+        <div class="text-main"><p>test</p></div>
+        <div class="text-bottom"><p>test2</p></div>
+    </div>
+
+    <div id="projects" class="section">
+      <div class="project" id="project1">
+    <h3>Counter</h3>
+    <button onclick="increaseCounter1()">Click Me</button>
+    <p>Counter: <span id="counter1">0</span></p>
+  </div>
+
+  <div class="project" id="project2">
+    <h3>Background Changer</h3>
+    <button onclick="changeBackground()">Change Background</button>
+  </div>
+
+  <div class="project" id="project3">
+    <h3>Random Number</h3>
+    <button onclick="generateRandom()">Generate</button>
+    <p id="randomOutput"></p>
+  </div>
+
+  <div class="project" id="project4">
+    <h3>Text Toggle</h3>
+    <button onclick="toggleText()">Toggle</button>
+    <p id="toggleText">Hello World!</p>
+  </div>
+
+  <div class="project" id="project5">
+    <h3>Live Clock</h3>
+    <p id="clock"></p>
+  </div>
+    </div>
+
+    <div id="experience" class="section">
+        <div class="image"><img src="https://moderncat.com/wp-content/uploads/2014/03/bigstock-46771525_Andrey_Kuzmin-1-940x640.jpg" height="150px" width="150px"></div>
+        <div class="text-main"><p>worktest</p></div>
+        <div class="text-bottom"><p>worktest2</p></div>
+    </div>
+  </div>
+
+  <script src = "./js/scripts.js">
+    
+  </script>
+
+</body>
+</html>
