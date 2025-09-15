@@ -42,3 +42,15 @@ function updateClock() {
   document.getElementById("clock").textContent = now.toLocaleTimeString();
 }
 setInterval(updateClock, 1000);
+function changeButtonColor(buttonElement) {
+  buttonElement.style.backgroundColor =
+    "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
+let fontIndex = 0;
+const fonts = ["Arial", "Courier New", "Georgia", "Verdana", "Times New Roman"];
+
+function changeFont() {
+  const body = document.body;
+  fontIndex = (fontIndex + 1) % fonts.length;
+  body.style.fontFamily = fonts[fontIndex];
+}
