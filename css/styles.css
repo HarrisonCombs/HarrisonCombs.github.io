@@ -110,7 +110,7 @@
   .text-main {
     grid-column: 1;
     padding: 15px;                
-    margin: 0 auto;               
+    margin: 0 ;               
     width: 90%;                  
     box-sizing: border-box;
   }
@@ -118,7 +118,7 @@
   .text-bottom {
     grid-column: 1;
     padding: 15px;                
-    margin: 0 auto;               
+    margin: 0 ;               
     width: 90%;                   
     box-sizing: border-box;
   }
@@ -131,4 +131,7 @@
   }
   .text-main { grid-row: 2; }
   .text-bottom { grid-row: 3; }
+.project{
+    margin:0;
+  }
 }
