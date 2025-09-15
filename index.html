@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header class="header">
+    <h1>My Portfolio</h1>
+  </header>
+
+  <div class="menu" >
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('experience')">Work Experience</button>
+  </div>
+
+  <div class="content">
+    <div id="about" class="section active">
+        <div class="image"><img src=".\img\image0.jpg" height="150px" width="150px"></div>
+        <div class="text-main"><p>My name is Harrison Combs. I am a 3rd year student studying Computer Science at the University of Indianapolis. I like spending my time on personal projects
+            to expand my knowledge and skills in programming. I also enjoy hiking and road trips.
+        </p></div>
+        <div class="text-bottom"><p>I find the most interesting part of Computer Science to be networking, my first step into the world of CS was hosting my own game servers when i was younger</p></div>
+    </div>
+
+    <div id="projects" class="section">
+      <div class="project" id="project1">
+    <h3>Counter</h3>
+    <button onclick="increaseCounter1()">Click Me</button>
+    <p>Counter: <span id="counter1">0</span></p>
+  </div>
+
+  <div class="project" id="project2">
+    <h3>Background Changer</h3>
+    <button onclick="changeBackground()">Change Background</button>
+  </div>
+
+  <div class="project" id="project3">
+    <h3>Random Number</h3>
+    <button onclick="generateRandom()">Generate</button>
+    <p id="randomOutput"></p>
+  </div>
+
+  <div class="project" id="project4">
+    <h3>Text Toggle</h3>
+    <button onclick="toggleText()">Toggle</button>
+    <p id="toggleText">Hello World!</p>
+  </div>
+
+  <div class="project" id="project5">
+    <h3>Live Clock</h3>
+    <p id="clock"></p>
+  </div>
+    </div>
+
+    <div id="experience" class="section">
+        <div class="image"><img src=".\img\image1.jpg" height="150px" width="150px"></div>
+        <div class="text-main"><p>Though I do not have any official work experience I have filled my time with personal projects to keep myself busy and practice designing and interative thinking. I have built a trebuchet from recycled parts including a motor from a bandsaw,
+            and i am currently working on a remote control Go-Kart using a reclining chair as the base.
+        </p></div>
+        <div class="text-bottom"><p>Technical skills:Python, Java, C++, Sql.<br>Attributes: Hardworking, Dependable, Eager, Fastlearning.</p></div>
+    </div>
+  </div>
+
+  <script src = "./js/scripts.js">
+    
+  </script>
+
+</body>
+</html>
